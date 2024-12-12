@@ -1,0 +1,13 @@
+import pandas as pd
+
+# Criando o dataframe de exemplo
+data = {'Data': ['2024-01-01', '2024-01-02', '2024-01-03'], 
+        'Vendas': [100, 200, 300]}
+df = pd.DataFrame(data)
+
+# Criar a nova coluna de vendas acumuladas
+df['Vendas_Acumuladas'] = df['Vendas'].cumsum()
+
+print(df)
+
+=Planilha2!A1
